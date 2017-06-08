@@ -20,10 +20,27 @@ public class QuizTest {
         Quiz quiz = new Quiz();
         String msg = quiz.checkBracket("[");
         System.out.println(msg);
+
         msg = quiz.checkBracket("]");
         System.out.println(msg);
+
+        msg = quiz.checkBracket("{([");
+        System.out.println(msg);
+
+
+        msg = quiz.checkBracket("[](){}");
+        System.out.println(msg);
+
+        msg = quiz.checkBracket("[()]{}");
+        System.out.println(msg);
+
+
+        msg = quiz.checkBracket("[)])");
+        System.out.println(msg);
+
         msg = quiz.checkBracket("[}");
         System.out.println(msg);
+
         msg = quiz.checkBracket("[]");
         System.out.println(msg);
     }

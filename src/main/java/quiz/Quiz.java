@@ -62,7 +62,7 @@ public class Quiz {
         } else if (stackItem != null) {
             message = "ERROR: opened '" + stackItem + "' but not closed";
         }
-        message = message != null ? message : "SUCCESS";
+        message = message != null ? message : "SUCCESS " + content;
         return message;
     }
 
